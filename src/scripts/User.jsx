@@ -3,13 +3,12 @@ import { ContainerUser, TitleUser, Information, UserInfo } from '../styles/Style
 import '../styles/styles.css';
 
 const User = ({ name, entrada, principal, postre }) => {
-  const nickName = name.includes(" ") ? name.split(" ")[0] : name;
   return (
     <ContainerUser>
       <TitleUser>¡Hola <span style={{textShadow: "5px 4px 3px whitesmoke"}}>foodlover!</span> 🙌</TitleUser>
       <p style={{fontSize: "20px"}}>A continuacion, la información brindada:</p>
       <ContainerUser>
-        <Information>Nombre: <UserInfo>{nickName}</UserInfo></Information>
+        <Information>Nombre: <UserInfo>{name}</UserInfo></Information>
         <Information>Entrada: <UserInfo>{entrada}</UserInfo></Information>
         <Information>Plato principal: <UserInfo>{principal}</UserInfo></Information>
         <Information>Postre: <UserInfo>{postre}</UserInfo></Information>

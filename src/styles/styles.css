@@ -1,0 +1,61 @@
+body {
+    background-image: url("../img/fondocomida1.jpg");
+}
+
+button {
+	position: relative;
+	display: block;
+	padding: 15px 10px;
+	border-radius: 6px;
+	text-align: center;
+	font-weight: bold;
+	max-width: 320px;
+	height: 65px;
+	overflow: hidden;
+	color:rgb(0, 0, 0);
+	cursor: pointer;
+	letter-spacing: 2px;
+	box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+	text-decoration: none;
+	transition: all ease 0.5s;
+	background:#FF7F50;
+}
+ 
+button:after,
+button:before{
+	width: 80px;
+	height: 200px;
+	content: '';
+	display: block;
+	background: #FF7F50;
+	transform: rotate(45deg);
+	top: -60px;
+	position: absolute;
+	transition: none;
+	right:-45%;
+	cursor: pointer;
+}
+ 
+button:before{
+	left: -48%;
+}
+ 
+button:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#fc9874
+}
+ 
+button:hover:after,
+button:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: #FF7F50;
+	transition: all ease 0.5s;
+}
+ 
+button:hover:after{
+	right: 130%;
+}
+ 
+button:hover:before{
+	left: 130%;
+}

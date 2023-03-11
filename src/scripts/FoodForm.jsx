@@ -22,14 +22,22 @@ const FoodForm = ({ handleFetchValues }) => {
   const getValidationSchema = () => (
     Yup.lazy(() =>
       Yup.object().shape({
-        name: Yup.string().required("Por favor, ingresa tu nombre❣️"),
+        name: Yup.string()
+          .min(3, 'Al menos debe ingresar tres caracteres')
+          .max(20, 'Ha superado el maximo de 20 caracteres')
+          .required("Por favor, chequea que la información sea correcta.❣️"),
         entrada: Yup.string()
-        .min(3, 'La entrada debe tener al menos tres letras')
-        .required('Por favor, ingresa tu entrada favorita❣️'),
+          .min(6, 'La entrada debe tener al menos seis caracteres')
+          .max(20, 'Ha superado el maximo de 20 caracteres')
+          .required("Por favor, chequea que la información sea correcta.❣️"),
         principal: Yup.string()
-          .min(6, 'El plato principal debe tener al menos seis letras')
-          .required('Por favor, ingresa plato principal favorito❣️'),
-        postre: Yup.string().required('Por favor, ingresa tu postre favorito❣️'),
+          .min(6, 'El plato principal debe tener al menos seis caracteres')
+          .max(20, 'Ha superado el maximo de 20 caracteres')
+          .required("Por favor, chequea que la información sea correcta.❣️"),
+        postre: Yup.string()
+          .min(3, 'Al menos debe ingresar tres caracteres')
+          .max(20, 'Ha superado el maximo de 20 caracteres')
+          .required("Por favor, chequea que la información sea correcta.❣️"),
       })
     )
   )

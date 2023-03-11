@@ -7,7 +7,7 @@ const User = ({ name, entrada, principal, postre }) => {
   return (
     <ContainerUser>
       <TitleUser>¡Hola <span style={{textShadow: "5px 4px 3px whitesmoke"}}>foodlover!</span> 🙌</TitleUser>
-      <p style={{fontSize: "20px"}}>A continuacion, la informacion brindada:</p>
+      <p style={{fontSize: "20px"}}>A continuacion, la información brindada:</p>
       <ContainerUser>
         <Information>Nombre: <UserInfo>{nickName}</UserInfo></Information>
         <Information>Entrada: <UserInfo>{entrada}</UserInfo></Information>

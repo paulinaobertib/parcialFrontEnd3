@@ -1,8 +1,22 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
 body {
     background-image: url("../img/fondocomida1.jpg");
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    padding: 0.6em 1.2em;
 }
 
 button {
+    border-color: rgb(247, 248, 250);
 	position: relative;
 	display: block;
 	padding: 15px 10px;
@@ -19,6 +33,7 @@ button {
 	text-decoration: none;
 	transition: all ease 0.5s;
 	background:#FF7F50;
+    padding: 5%;
 }
  
 button:after,

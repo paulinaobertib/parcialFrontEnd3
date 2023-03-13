@@ -25,6 +25,7 @@ const FoodForm = ({ handleFetchValues }) => {
         name: Yup.string()
           .min(3, 'Al menos debe ingresar tres caracteres')
           .max(20, 'Ha superado el maximo de 20 caracteres')
+          .trim("No debe tener espacios en blanco").strict()
           .required("Por favor, chequea que la información sea correcta.❣️"),
         entrada: Yup.string()
           .min(6, 'La entrada debe tener al menos seis caracteres')

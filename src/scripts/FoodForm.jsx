@@ -14,9 +14,9 @@ const inputs = [
 const FoodForm = ({ handleFetchValues }) => {
   const getInitialValues = () => ({
     name: "",
-    email: "",
-    password: "",
-    repeatpassword: ""
+    entrada: "",
+    principal: "",
+    postre: ""
   });
 
   const getValidationSchema = () => (
